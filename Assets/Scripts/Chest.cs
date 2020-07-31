@@ -4,11 +4,20 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public GameObject pole;
-    void OnTriggerEnter2D()
+    bool can = true;
+    void Start()
     {
         
+    }
+    // Start is called before the first frame update
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (Input.GetKeyDown(KeyCode.E) && can)
+        {
+            int x = Random.Range(2, 6);
+            col.gameObject.GetComponent<move_player>().Give_money(x);
+            can = false;
+        }
     }
 
     // 

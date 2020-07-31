@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class move_player : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class move_player : MonoBehaviour
     public GameObject check_gr;
     Animator anim;
     bool isGround = true;
+    int money;
+    public Text text;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -57,7 +60,6 @@ public class move_player : MonoBehaviour
         {
             if (isGround)
             {
-                print(isGround);
                 anim.SetInteger("state", 2);
             }
             else
@@ -70,9 +72,16 @@ public class move_player : MonoBehaviour
         isGround = colliders.Length > 1;
         if (!isGround)
         {
-            print(isGround);
             anim.SetInteger("state", 3);
         }
     }
+    
+    public void Give_money(int x)
+    {
+        money += x;
+        print(money);
+        text.text = money.ToString();
+    }
+
 
 }
