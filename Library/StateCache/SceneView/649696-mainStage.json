@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-4.119441032409668,"y":-0.6156010031700134,"z":-20.828702926635743},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.067427635192871,"orthographic":true}
+=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":869.7999267578125,"y":227.5011749267578,"z":-29.47467041015625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":182.45150756835938,"orthographic":true}
+>>>>>>> remotes/origin/develope
