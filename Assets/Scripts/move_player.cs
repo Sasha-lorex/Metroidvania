@@ -13,7 +13,7 @@ public class move_player : MonoBehaviour
     public GameObject check_gr;
     Animator anim;
     bool isGround = true;
-    int money;
+    public int money;
     public Text text;
     void Start()
     {
@@ -79,7 +79,6 @@ public class move_player : MonoBehaviour
     public void Give_money(int x)
     {
         money += x;
-        print(money);
         text.text = money.ToString();
     }
 
